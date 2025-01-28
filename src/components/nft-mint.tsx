@@ -70,7 +70,7 @@ export function NftMint(props: Props) {
 			<div className="absolute top-4 right-4">
 				<ConnectButton client={client} />
 			</div>
-			<Card className="w-full max-w-md">
+			<Card className="max-w-full max-w-md">
 				<CardContent className="pt-6">
 					<div className="aspect-square overflow-hidden rounded-lg mb-4 relative">
 						{props.isERC1155 ? (
