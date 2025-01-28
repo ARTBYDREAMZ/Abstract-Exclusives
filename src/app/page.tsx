@@ -93,12 +93,9 @@ export default function Home() {
 		queryOptions: { enabled: !!currency },
 	});
 
-	const currencySymbol = currencyMetadata.data?.symbol || "";
+	const pricePerToken = 0.005; // Fixed price in ETH
 
-	const pricePerToken =
-		currencyMetadata.data && priceInWei !== null && priceInWei !== undefined
-			? Number(toTokens(priceInWei, currencyMetadata.data.decimals))
-			: null;
+	const currencySymbol = "ETH"; // Fixed currency symbol
 
 	return (
 		<NftMint
